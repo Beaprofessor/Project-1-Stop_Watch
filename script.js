@@ -10,10 +10,10 @@ let startTime, intervalId;
 function start() {
     startTime = Date.now();
     intervalId = setInterval(() => {
-        const elapsedTime = Date.now() - startTime
-        const seconds = Math.floor(elapsedTime/1000);
-        const minutes = Math.floor(elapsedTime/60);
-        const hours = Math.floor(elapsedTime/60);
+        const elapsedTime = Date.now() - startTime;
+        const seconds = Math.floor(elapsedTime/ 1000) % 60;
+        const minutes = Math.floor(elapsedTime/ 60000) % 60;
+        const hours = Math.floor(elapsedTime/ 3600000);
         //HH:MM:SS
         const formattedTime = `${pad(hours)}: ${pad(minutes)}: ${pad(seconds)}`;
 
