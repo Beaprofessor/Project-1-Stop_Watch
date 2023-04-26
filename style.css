@@ -52,16 +52,16 @@ button:hover{
     transition: translate(5px,5px);
 }
 
-.Start{
+.start{
     background-color: yellowgreen;
     color: beige;
 }
-.Stop{
+.stop{
     background-color: red;
     color: beige;
 }
 
-.Reset{
+.reset{
     background-color: coral;
     color: beige;
 }
