@@ -55,6 +55,7 @@ button:hover{
 .start{
     background-color: yellowgreen;
     color: beige;
+    /* color */
 }
 .stop{
     background-color: red;
